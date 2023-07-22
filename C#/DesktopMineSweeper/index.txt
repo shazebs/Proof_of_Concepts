@@ -1,0 +1,2 @@
+author: shazeb suhail
+description: minesweeper game developed as a desktop application.
