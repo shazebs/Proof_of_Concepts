@@ -1,0 +1,2 @@
+author: shazeb suhail 
+description: minesweeper game developed as a web-based application for a group project.
