@@ -1,1 +1,2 @@
 author: shazeb suhail
+description: This application is a group project 
