@@ -1,0 +1,181 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico:wght@700&display=swap');
+
+  div.body {
+      /*height:100%;*/
+  }
+
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+
+  nav {
+    font-family: 'Quantico', sans-serif;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  .box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+
+  #PageTitle {
+    color: white;
+    font-size: 20px;
+  }
+
+    #PageTitle:hover {
+      color: dodgerblue;
+    }
+
+  .PageLink {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    font-family: "Quantico", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    text-align: left;
+    text-decoration-color: rgba(255, 255, 255, 0.75);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  }
+    .PageLink:hover {
+      background: white;
+      color: dodgerblue;
+      border-radius: 3px;
+      cursor:pointer;
+    }
+
+  h2 {
+    padding-top: 2%;
+    color:black;
+  }
+
+  #PageLock {
+    background: transparent;
+    margin-top: 4%;
+    width: 25vw;
+    height: auto;
+    border-radius: 500px;
+    background-image: url(https://www.just.edu.jo/Units_and_offices/Offices/IRO/PublishingImages/Pages/Mobility%20Calls/MobilityCalls/56acbd_02bdd7b59c63471f8da7452f41a32d77_mv2.gif);
+    background-size: 139%;
+    background-position: center;
+  }
+    #PageLock:hover {
+      cursor: pointer;
+      background: #66ff00;
+      background-image: url(https://shazebs.com/images/loading.gif?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJlbl9HQiIsInZpZXdNb2RlIjoibGlzdCIsInNpbmdsZUNsaWNrIjpmYWxzZSwicGVybSI6eyJhZG1pbiI6ZmFsc2UsImV4ZWN1dGUiOmZhbHNlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjpmYWxzZSwiZG93bmxvYWQiOnRydWV9LCJjb21tYW5kcyI6W10sImxvY2tQYXNzd29yZCI6dHJ1ZSwiaGlkZURvdGZpbGVzIjpmYWxzZSwiZGF0ZUZvcm1hdCI6ZmFsc2V9LCJleHAiOjE2NjQwNDU3NjcsImlhdCI6MTY2NDAzODU2NywiaXNzIjoiRmlsZSBCcm93c2VyIn0.uCGiKZFLMD6ih_5LT2GJD8PTIMBxHYE2hmXXhIzFjOs&inline=true&key=1664038613668);
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid white;
+    }
+
+  @media (max-width:600px) {
+    #PageLock {
+      /*width: 60%;*/
+    }
+  }
+
+  #HomeContainer {
+    justify-content: center;
+    text-align: center;
+    padding-top: 57px;
+    padding-top: 100px;
+    /*height:100%;*/
+  }
+
+  @media (max-width:600px) {
+      #HomeContainer {
+          padding-top:150px;
+      }
+  }
+
+</style>
+
+<div class="body">
+
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow" style="position:fixed;width:100%;z-index:1000;">
+      <div class="container">
+        <a id="PageTitle" class="PageLink" [routerLink]="['/']">OB3Y ME P3ASANT</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                aria-label="Toggle navigation"
+                [attr.aria-expanded]="isExpanded"
+                (click)="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+             [ngClass]="{ show: isExpanded }">
+          <ul class="navbar-nav flex-grow">
+            <li class="nav-item" *ngIf="!isUserLoggedIn">
+              <a class="PageLink" (click)="LoginRedirect()">LOGIN</a>
+            </li>
+            <li>
+              <button *ngIf="isUserLoggedIn" style="margin-right: 10px; padding: 0 15px;" (click)="HideWindows()">Off</button>
+              <button *ngIf="isUserLoggedIn" style="margin-right: 10px; padding: 0 15px;" (click)="ShowWindows()">On</button>
+            </li>
+            <li class="nav-item" *ngIf="isUserLoggedIn">
+              <a class="PageLink" (click)="LogoutRedirect()">LOGOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="HomeContainer" class="container" *ngIf="!isUserLoggedIn">
+    <div>
+      <h2>Please sign-in to have access to this internet resource.</h2>
+      <div class="container">
+        <img id="PageLock" title="click here to sign-in"
+             src="https://icon-library.com/images/white-lock-icon-png/white-lock-icon-png-16.jpg"
+             (click)="LoginRedirect()" />
+      </div>
+    </div>
+  </div>
+
+  <div style="height:100vh;">
+    <router-outlet *ngIf="!isIframe"></router-outlet>
+  </div>
+
+</div>
