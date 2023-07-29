@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shazebalopolis.API", "shazebalopolis.API\shazebalopolis.API.csproj", "{FA4E91F5-5F2D-4356-97F6-3F0B21BC34D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shazebalopolis.UI", "shazebalopolis.UI\shazebalopolis.UI.csproj", "{0DF1D0B4-918C-4B3A-9962-381690777C48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA4E91F5-5F2D-4356-97F6-3F0B21BC34D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4E91F5-5F2D-4356-97F6-3F0B21BC34D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4E91F5-5F2D-4356-97F6-3F0B21BC34D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4E91F5-5F2D-4356-97F6-3F0B21BC34D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF1D0B4-918C-4B3A-9962-381690777C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF1D0B4-918C-4B3A-9962-381690777C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF1D0B4-918C-4B3A-9962-381690777C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF1D0B4-918C-4B3A-9962-381690777C48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EFDA2D0-E40A-460A-9DBD-11781B89B623}
+	EndGlobalSection
+EndGlobal
