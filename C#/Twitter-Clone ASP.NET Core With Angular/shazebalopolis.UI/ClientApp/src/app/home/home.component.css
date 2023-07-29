@@ -1,0 +1,344 @@
+#AdditionalContent {
+  width: 100%;
+  max-width: 25%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.AdditionalContentSection {
+  background: whitesmoke;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: large;
+  border-left: 2px solid dodgerblue;
+  border-right: 2px solid dodgerblue;
+  border-radius: 4px;
+  padding: 1% 2%;
+  margin-top: 4%;
+  max-height: 25%;
+}
+  .AdditionalContentSection:hover {
+    text-decoration: underline;
+    opacity: 1;
+    background: dodgerblue;
+    color: white;
+  }
+
+.Caption {
+  height: 100%;
+  font-size: 90%;
+  background: white;
+  padding-bottom: 1%;
+}
+  .Caption div {
+    background: white;
+    padding: 0% 2%;
+    overflow-wrap: break-word;
+  }
+
+.CaptionAdditionalContent {
+  padding-top: 1%;
+}
+  .CaptionAdditionalContent iframe {
+    width: 100%;
+    min-height: 350px;
+  }
+
+.FlexBox {
+  display:flex;
+  flex-direction: column;
+}
+  .FlexBox div, section {
+    height: 100%;
+    width: 100%;
+  }
+
+footer {
+  display:none;
+  height: 26px;
+  font-size: 18px;
+  text-align: center;
+}
+  footer span {
+    background: whitesmoke;
+    padding: 0 2%;
+    border-radius: 4px;
+    cursor: default;
+    opacity: 0.6;
+  }
+
+#HomeContent {
+  background: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  color: black;
+  font-size: 115%;
+  padding: 0 2%;
+  /*background-image: url(https://thumbs.gfycat.com/QuestionableFinishedEgret-size_restricted.gif);*/
+  /*background-image: url(https://media1.giphy.com/media/j5mwjor5i5PGigmPH2/giphy.gif);*/
+  /*background-image: url(http://boingboing.net/wp-content/uploads/2013/01/1349129622613.gif);*/
+  /*background-image: url(https://64.media.tumblr.com/375f5e55441bfdce61f0d58a96668a0e/0e0983c78fd49991-b3/s500x750/1ec5f6eca6afe5a5cd8dce2f9d2e928c57326664.gifv);*/
+  background-image: url(https://i.pinimg.com/originals/d1/c7/6c/d1c76c45c56116be732fa6d6a7265d42.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 57px;
+}
+
+#iStatus {
+    width:100%;
+    height:100%;
+}
+
+#LoadingIcon {
+  width: 50px;
+  height: 50px;
+  background-image: url(https://shazebs.com/images/THIS_A_MOTHERFUCKING_SHARINGAN_BITCHHH.gif?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJlbl9HQiIsInZpZXdNb2RlIjoibGlzdCIsInNpbmdsZUNsaWNrIjpmYWxzZSwicGVybSI6eyJhZG1pbiI6ZmFsc2UsImV4ZWN1dGUiOmZhbHNlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjpmYWxzZSwiZG93bmxvYWQiOnRydWV9LCJjb21tYW5kcyI6W10sImxvY2tQYXNzd29yZCI6dHJ1ZSwiaGlkZURvdGZpbGVzIjpmYWxzZSwiZGF0ZUZvcm1hdCI6ZmFsc2V9LCJleHAiOjE2NjEyMjM2MzksImlhdCI6MTY2MTIxNjQzOSwiaXNzIjoiRmlsZSBCcm93c2VyIn0.sH--829h3EuhaOLyIuIRMaHompY20Lyx7g9Ea-YgsUI&inline=true&key=1661216373155);
+  background-size:105%;
+  overflow:hidden;
+  border:3px solid black;
+  border-radius:50px;
+  background-position:center;
+  margin-right:auto;
+  margin-left:auto;
+  color:white;
+  font-size:59%;
+  display:flex;
+  vertical-align:middle;
+  padding-top:18px;
+  justify-content: center;
+  margin-top:3px; 
+}
+
+#MainTimeline {
+  display:flex;
+  width: 100%;
+  height: fit-content;
+  max-height:100%;
+}
+
+#Notifications {
+  min-height: fit-content;
+  max-height:100%;
+  /*  display: flex;
+  align-items: center;*/
+}
+
+.pfp {
+  min-width: 69px;
+  max-width: 66px;
+  min-height: 74px;
+  border-radius: 500px;
+  border: 1px solid dodgerblue;
+  /*background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2b02873a-e108-4a4e-aff7-d9b819aaa25e/dczv1g4-b25c902f-28af-429f-b230-c876cc780582.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJiMDI4NzNhLWUxMDgtNGE0ZS1hZmY3LWQ5YjgxOWFhYTI1ZVwvZGN6djFnNC1iMjVjOTAyZi0yOGFmLTQyOWYtYjIzMC1jODc2Y2M3ODA1ODIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TiQdVO48ymT6abm4G0Ryg_ovCHDPBzOIQAAMmNrLAuI);*/
+  background-image: url(https://shazebs.com/images/anonymous.gif?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJlbl9HQiIsInZpZXdNb2RlIjoibGlzdCIsInNpbmdsZUNsaWNrIjpmYWxzZSwicGVybSI6eyJhZG1pbiI6ZmFsc2UsImV4ZWN1dGUiOmZhbHNlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjpmYWxzZSwiZG93bmxvYWQiOnRydWV9LCJjb21tYW5kcyI6W10sImxvY2tQYXNzd29yZCI6dHJ1ZSwiaGlkZURvdGZpbGVzIjpmYWxzZSwiZGF0ZUZvcm1hdCI6ZmFsc2V9LCJleHAiOjE2NjEyMzUxMjIsImlhdCI6MTY2MTIyNzkyMiwiaXNzIjoiRmlsZSBCcm93c2VyIn0.t5kcTAuVicIKHroE56kkvD-llToOtK2FphnwIGaCF3I&inline=true&key=1661227965532);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .pfp:hover {
+    cursor: pointer;
+  }
+
+.Post {
+  padding: 1% 2%;
+  border-bottom: 2px solid dodgerblue;
+  border-left: 2px solid dodgerblue;
+  border-right: 2px solid dodgerblue;
+  display: flex;
+  flex-direction: row;
+  background: whitesmoke;
+  opacity: 0.9;
+}
+  .Post:hover {
+    background: white;
+    opacity: 1;
+  }
+
+.PostAction {
+  font-size: 85%;
+  background: white;
+  padding: 0 2%;
+  color: gray;
+  border-radius: 4px;
+}
+  .PostAction:hover {
+    background: dodgerblue;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+.PostActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top:2%;
+  padding-bottom:1%;
+}
+
+.PostContent {
+  padding: 1% 2%;
+  max-width:90%;
+}
+
+#PostContentBox {
+  display: block;
+  border-left: 2px solid dodgerblue;
+  border-right: 2px solid dodgerblue;
+  border-bottom: 2px solid dodgerblue;
+  min-height: fit-content;
+  max-height:400px;
+  padding: 0% 2%;
+  padding-top: 1%;
+  text-align: left;
+  background: white;
+  opacity:0.9;
+  display:flex;
+}
+  #PostContentBox:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  #PostContentBox textarea {
+      width:100%;
+      margin-top:1%;
+      padding:0% 1%;
+      max-height:150px;
+      height:40px;
+      min-height:40px;
+      height:fit-content;
+  }
+
+.PostHeading {
+  border: 1px solid white;
+  background: white;
+  border-radius: 4px;
+}
+
+.Postpfp {
+  max-width: fit-content;
+  padding: 1%;
+  text-align:center;
+}
+
+.right {
+  text-align: right;
+}
+
+#SearchBar {
+  max-height: 5%;
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+}
+
+#SidePaneMenu {
+  width: fit-content;
+  min-width: 15%;
+  margin-right: 1%;
+  margin-top: 1%;
+  background: white;
+  border-radius: 4px;
+  border-left: 2px solid dodgerblue;
+  border-right: 2px solid dodgerblue;
+  opacity: 0.9;
+  max-height:33%;
+  display:flex;
+  flex-direction:column;
+}
+  #SidePaneMenu:hover {
+    opacity: 1;
+  }
+  #SidePaneMenu div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  #SidePaneMenu div:hover {
+    background: dodgerblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size:x-large;
+  }
+
+#Timeline {
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.Username {
+  height: fit-content;
+  background: white;
+}
+
+.username {
+  padding: 0 1%;
+}
+  .username:hover {
+    background: dodgerblue;
+    color: white;
+    text-decoration: underline;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+@media (max-width:1050px)
+{
+  #AdditionalContent {
+    display: none;
+  }
+
+  #HomeContent {
+    padding-right: 0%;
+    font-size: 100%;
+    padding-left: 0%;
+  }
+
+  #SidePaneMenu {
+      min-height:50%;
+      min-width:12%;
+      font-size:80%;
+      margin-right:0;
+      margin-top:0;
+      border-right:none;
+      border-radius:0px;
+  }
+    #SidePaneMenu div:hover {
+        font-size:larger;
+    }
+}
+
+@media (max-width:700px)
+{
+  #HomeContent {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .Post {
+    border-right: none;
+    border-left: none;
+  }
+
+  #PostContentBox {
+    max-height:fit-content;
+    border-right:none;
+    border-left:none;
+  }
+
+  #SidePaneMenu {
+    font-size: 80%;
+    display: none;
+  }
+
+  .Username {
+      color:black;
+  }
+}

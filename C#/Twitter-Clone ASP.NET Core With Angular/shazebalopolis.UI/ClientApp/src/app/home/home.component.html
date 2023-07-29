@@ -1,0 +1,116 @@
+<!-- Left-side Pane Menu -->
+<div id="HomeContent" *ngIf="loginDisplay">
+
+  <section id="SidePaneMenu" class="FlexBox">    
+    <div> <span>Timeline</span> </div>
+    <div> <span>Profile</span> </div>
+    <div> <span>Friends</span> </div>
+    <div> <span>Messages</span> </div>
+    <div> <span>Settings</span> </div>
+  </section>
+
+  <div id="MainTimeline" class="FlexBox">
+    <section id="PostContentBox">
+      <div class="Postpfp">
+        <div class="pfp"></div>
+      </div>
+      <div class="PostContent" style="padding-top:0;">
+        <form #TweetForm="ngForm" (ngSubmit)="PostTweet()">
+          <div class="Username">
+            <span style="color:dodgerblue;">@</span><span class="username" *ngIf="preferred_username">{{ preferred_username }}</span>
+          </div>
+          <textarea id="Tweet" name="Tweet" [(ngModel)]="tweet.Content" placeholder="What's happening?"></textarea>
+          <div class="PostActions">
+            <div></div>
+            <div type="submit" class="PostAction" style="width:fit-content;" (click)="PostTweet()">Post</div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="Timeline">
+      <div class="Post" *ngFor="let tweet of Tweets; let i = index;">
+        <div class="Postpfp">
+          <div class="pfp"></div>
+        </div>
+        <div class="FlexBox PostContent" style="">
+          <div class="PostHeading">
+            <div class="Username" style="padding-left:1%;">
+              <span style="color:dodgerblue;">@</span><span class="username">{{ tweet.Username }}</span>
+            </div>
+            <div class="Caption FlexBox">
+              <div wrap="hard">{{ tweet.Content }}</div>
+            </div>
+          </div>
+          <div class="PostActions">
+            <div></div>
+            <div class="PostAction" style="text-align: right; width: fit-content;">Like</div>
+            <div class="PostAction" style="text-align:center;width:fit-content;margin-left:2%;">Comment</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="LoadingIcon">Loading...</div>
+      
+      <!--<div class="Post" style="background-image: url(https://i.gifer.com/NyDe.gif); background-size:cover;">
+        <div class="Postpfp">
+          <div class="pfp"></div>
+        </div>
+        <div class="FlexBox PostContent" style="">
+          <div class="PostHeading">
+            <div class="Username" style="padding-left:1%;"><span style="color:dodgerblue;">@</span><span class="username">SonGoku</span></div>
+            <div class="Caption FlexBox">
+              <div style="">“I am the hope of the universe...I am the answer to all living things that cry out for peace...I am the protector of the innocent...I am the light in the darkness...I am truth. Ally to good...Nightmare to you!”
+              </div>
+            </div>
+          </div>
+          <div class="CaptionAdditionalContent">
+            <iframe src="https://www.youtube.com/embed/G0JKdFjWkLA?list=RDGMEMP-96bLtob-xyvCobnxVfywVM-exP0q-QbBw" title="The Weeknd - Snowchild (Animated Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="PostActions">
+            <div></div>
+            <div class="PostAction" style="text-align: right; width: fit-content">Like</div>
+            <div class="PostAction" style="text-align:center;width:fit-content;margin-left:2%;">Comment</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Post" style="background-image: url(https://media4.giphy.com/media/sJvz8Qnfly3BOuotGx/200.gif); background-size: cover;">
+        <div class="Postpfp">
+          <div class="pfp"></div>
+        </div>
+        <div class="FlexBox PostContent" style="">
+          <div class="PostHeading">
+            <div class="Username" style="padding-left:1%;"><span style="color:dodgerblue;">@</span><span class="username">SonGoku</span></div>
+            <div class="Caption FlexBox">
+              <div style="background:white; padding:0% 2%; padding-bottom:1%;">“Power comes in response to a need, not a desire.”</div>
+            </div>
+          </div>
+          <div class="PostActions">
+            <div></div>
+            <div class="PostAction" style="text-align: right; width: fit-content;">Like</div>
+            <div class="PostAction" style="text-align:center;width:fit-content;margin-left:2%;">Comment</div>
+          </div>
+        </div>
+      </div>-->   
+
+
+    </section>
+    <!--<footer><span>End of Timeline.</span></footer>-->
+  </div>
+
+
+  <div id="AdditionalContent" class="FlexBox">
+    <section id="SearchBar" class="AdditionalContentSection" style="margin-top:0;" (click)="ChangeWebsitePreview()">Click here to shuffle website preview!</section>
+    <section id="Notifications" class="AdditionalContentSection">
+      <!--Notifications-->
+      <iframe id="iStatus" src="https://shazebs.net"></iframe>
+    </section>
+    <!--<section id="WorkoutLogs" class="AdditionalContentSection">WorkoutLogs</section>
+    <section id="NetWorth" class="AdditionalContentSection">NetWorth</section>-->
+  </div>
+
+
+</div>
+
