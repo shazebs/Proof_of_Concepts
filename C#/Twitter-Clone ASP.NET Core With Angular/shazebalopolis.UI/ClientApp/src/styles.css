@@ -1,0 +1,19 @@
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+code {
+  color: #e01a76;
+}
+
+html {
+  background: transparent;
+  color: black;
+  margin-bottom: 0px;
+}
